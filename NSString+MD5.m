@@ -12,7 +12,7 @@
 
 - (NSString *)MD5Digest
 {
-    const char* input = [self UTF8String];
+    const char *input = [self UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
     CC_MD5(input, (CC_LONG)strlen(input), result);
     
